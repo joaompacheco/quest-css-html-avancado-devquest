@@ -1,0 +1,150 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url(../images/bg-desktop.svg) center center no-repeat;
+  background-color: #674baf;
+  background-size: 100%;
+  padding: 70px 60px;
+  max-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.container img {
+  width: 100%;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-container h2 {
+  font-weight: 600;
+  font-size: 4rem;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  color: #fff;
+  max-width: 20ch;
+}
+
+.register-container p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #fff;
+  margin-bottom: 26px;
+  max-width: 50ch;
+}
+
+.register-container a {
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #674baf;
+  padding: 15px 70px;
+  background-color: #fff;
+  display: inline-block;
+  align-self: flex-start;
+  border-radius: 50px;
+  transition: 0.3s;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.register-container a:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.social a i {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 50px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.social a i:hover {
+  color: #de50d5;
+  border-color: #de50d5;
+}
+
+@media (max-width: 375px) {
+  body {
+    background: url(../images/bg-mobile.svg) top center no-repeat;
+    background-color: #674baf;
+    padding: 30px 20px;
+  }
+
+  .logo {
+    width: 40%;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin: 0px;
+  }
+
+  .container img {
+    max-width: 90%;
+    margin-left: 15px;
+    align-self: flex-start;
+    margin-bottom: none;
+  }
+
+  .register-container h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .register-container p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff0f1;
+  }
+
+  .register-container a {
+    padding: 10px 70px;
+    font-size: 1rem;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+
+  .footer-container {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .social {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .social a i {
+    padding: 8px;
+  }
+}
