@@ -15,6 +15,7 @@ Desktop version (1440px)
 ![screen-gif](./src/images/screenshot.gif)
 
 Mobile version (375px)
+
 ![](./src/images/Screenshot.png)
 
 ## My process
